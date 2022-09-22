@@ -1,6 +1,11 @@
-﻿// Task10
+﻿// Task13
 Console.Clear();
-Console.WriteLine("Введите трехзначное число: ");
+Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Вторая цифра числа: ");
-Console.WriteLine((number / 10) % 10);
+
+if (number % 100 < 1) Console.WriteLine("Третьей цифры нет");
+else 
+{
+    Console.WriteLine("Третья цифра числа:");
+    Console.WriteLine((number % 10) % 100);
+}
