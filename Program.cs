@@ -1,3 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-// new string
+﻿// Task10
+Console.Clear();
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Вторая цифра числа: ");
+Console.WriteLine((number / 10) % 10);
