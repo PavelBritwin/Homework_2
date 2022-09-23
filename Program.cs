@@ -1,12 +1,7 @@
-﻿// Task13
+﻿// Task15
 Console.Clear();
-Console.WriteLine("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-string numberStr = number.ToString();
-
-if (number < 100) Console.WriteLine("Третьей цифры нет");
-else 
-{
-    Console.WriteLine("Третья цифра числа:");
-    Console.WriteLine(numberStr[2]);
-}
+Console.WriteLine("Введите номер дня недели: ");
+int dayNumber = Convert.ToInt32(Console.ReadLine());
+if ((0 < dayNumber) && (dayNumber < 6)) Console.WriteLine("нет");
+else if ((5 < dayNumber) && (dayNumber < 8)) Console.WriteLine("да");
+else Console.WriteLine("Не существует такого номера дня в неделе");
